@@ -1,0 +1,169 @@
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore> a <http://www.w3.org/2002/07/owl#Ontology> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#belongsTo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasAuthor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasPrice> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasPublisher> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#liveIn> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#locatedIn> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Company>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#provideIn> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#publishFor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#writeFor>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#workWith> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#writeFor> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#amount> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#code> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#id> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Company>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Windows>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#isbn> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix>, <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Windows>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#role> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#symbol> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#title> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://xmlns.com/foaf/0.1/firstName> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://xmlns.com/foaf/0.1/lastName> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Company> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Author> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Company> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Windows> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development> .
+
+<http://xmlns.com/foaf/0.1/Person> a <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#book1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#belongsTo> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1.1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasAuthor> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#developer1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasPrice> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#price1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#hasPublisher> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#publisher1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#isbn> "0672329468";
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#title> "Linux Kernel Development" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> "development" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1.1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> "unix" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> "Switzerland" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country2> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> "United States" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#currency1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Currency>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#code> "EU";
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#symbol> "€" .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#developer1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#liveIn> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#role> "preface";
+  <http://xmlns.com/foaf/0.1/firstName> "Robert"^^<http://www.w3.org/2000/01/rdf-schema#Literal>;
+  <http://xmlns.com/foaf/0.1/lastName> "Love"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#price1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Price>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#provideIn> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#currency1>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#amount> "43.32"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#publisher1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+    <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#locatedIn> <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country2>;
+  <http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name> "Addison Wesley" .
