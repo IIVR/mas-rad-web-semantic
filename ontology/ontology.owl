@@ -174,11 +174,6 @@
     <!-- http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Windows"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
