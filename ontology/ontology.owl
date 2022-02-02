@@ -402,8 +402,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer"/>
         <bookstore:liveIn rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country1"/>
         <bookstore:role>preface</bookstore:role>
-        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Robert</foaf:firstName>
-        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Love</foaf:lastName>
+        <foaf:firstName>Robert</foaf:firstName>
+        <foaf:lastName>Love</foaf:lastName>
     </owl:NamedIndividual>
     
 
