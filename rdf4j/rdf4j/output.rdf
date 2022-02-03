@@ -103,11 +103,6 @@
 
 <rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#name">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Category"/>
-	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Country"/>
-	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development"/>
-	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix"/>
-	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Windows"/>
 	<range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </rdf:Description>
 
@@ -202,24 +197,12 @@
 <rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#book1">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Book"/>
-	<belongsTo xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1.1"/>
+	<belongsTo xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#unix1"/>
 	<hasAuthor xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#developer1"/>
 	<hasPrice xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#price1"/>
 	<hasPublisher xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#publisher1"/>
 	<isbn xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">0672329468</isbn>
 	<title xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">Linux Kernel Development</title>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development"/>
-	<name xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">development</name>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#category1.1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix"/>
-	<name xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">unix</name>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country1">
@@ -245,9 +228,16 @@
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Developer"/>
 	<liveIn xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country1"/>
+	<publishFor xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#development1"/>
 	<role xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">preface</role>
-	<firstName xmlns="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Robert</firstName>
-	<lastName xmlns="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Love</lastName>
+	<firstName xmlns="http://xmlns.com/foaf/0.1/">Robert</firstName>
+	<lastName xmlns="http://xmlns.com/foaf/0.1/">Love</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#development1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Development"/>
+	<name xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">development</name>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#price1">
@@ -262,6 +252,12 @@
 	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Publisher"/>
 	<locatedIn xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#" rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#country2"/>
 	<name xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">Addison Wesley</name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#unix1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#Unix"/>
+	<name xmlns="http://www.semanticweb.org/vv/ontologies/2022/0/bookstore#">unix</name>
 </rdf:Description>
 
 </rdf:RDF>
