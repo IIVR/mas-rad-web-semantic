@@ -50,8 +50,7 @@ public class Ontology {
 			
 			buildOntology(conn);
 			createIndividuals(conn);
-			
-			displayRepository(conn);
+//			displayRepository(conn);
 							
 			execQueryGetDevelopersOrderBy(conn);
 			execQueryGetBooksStartBy(conn);
@@ -60,6 +59,8 @@ public class Ontology {
 			execQueryGetBookByTitle(conn);
 			execQueryGetBookByCategory(conn);
 		
+		} catch (Exception e) {
+			
 		}
 			
 	}
